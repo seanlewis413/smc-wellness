@@ -1,0 +1,39 @@
+<WrapLayout loaded="onLoad" actionBarHidden="true" xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:pager="nativescript-pager">
+	<StackLayout orientation="vertical">
+		<WrapLayout class="navbar" orientation="horizontal" class="centered">
+			<Button text="Manage Team" (tap)="checkHtml()" class="nav-button" *ngIf="isTeamCaptain" ></Button>
+			<Label class="h1 centered" text="{{user}}" id="name"></Label>
+			<Button text="Logout" (tap)="logout()" class="nav-button" id="logout"></Button>
+		</WrapLayout>
+		<StackLayout #topRef orientation="vertical" col="0" backgroundColor="black" class="centered" *ngIf="isConnected">
+			<StackLayout orientation="horizontal" width="100%" margin="auto" class="centered">
+				<Button class="chooser right" id="invisible-btn" horizontalAlignment="center" *ngIf="today == 0"></Button>
+				<Button class="chooser left" text="{{left}}" (tap)="switchDay(-1)" horizontalAlignment="center" *ngIf="today > 0"></Button>
+				<Label text="{{days[today].title}}" class="daynotdone day centered" *ngIf="!dayIsDone" horizontalAlignment="center"></Label>
+				<Label text="{{days[today].title}}" class="topheader day centered" *ngIf="dayIsDone" horizontalAlignment="center"></Label>
+				<Button class="chooser right" text="{{right}}" (tap)="switchDay(1)" horizontalAlignment="center" *ngIf="6 > today"></Button>
+				<Button class="chooser right" id="invisible-btn" horizontalAlignment="center" *ngIf="today == 6"></Button>
+			</StackLayout>
+
+			<ScrollView orientation="vertical">
+			<StackLayout orientation="vertical">   
+				<StackLayout orientation="vertical" *ngFor="let cat of categories; let i = index">
+					<WrapLayout orientation="vertical" [id]="cat.id" class="questionsection centered">
+						<Label text="{{cat.title}}" class="h1" [id]="cat.id" ></Label>
+						<StackLayout class="centered" *ngFor="let act of activities[i]">
+							<Label [text]="act.question" class="question" textWrap="true"></Label>
+							<WrapLayout class="centered" orientation="horizontal"> 
+								<Button  *ngFor="let choice of act.choices" class="chooser" text="{{choice.title}}" item="{{choice.value}}" (tap)="makeChoice($event)" id="{{act.id}}{{choice.value}}" [list]="act.choices" activity="{{act.id}}"></Button>
+							</WrapLayout>
+						</StackLayout>
+					</WrapLayout>
+				</StackLayout>
+			</StackLayout>
+			</ScrollView>
+		</StackLayout>
+		<StackLayout #topRef orientation="vertical" col="0" backgroundColor="black" class="centered" *ngIf="!isConnected">
+			<Label id="error" text="Connection failed. Please try again." class="h1" textWrap="true"></Label>
+			<Button id="retry" text="Retry" class="chooser centered" (tap)="getData()"></Button>
+		</StackLayout>
+	</StackLayout>
+</WrapLayout>

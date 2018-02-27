@@ -1,0 +1,46 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "org.nativescript.SMCWellness",
+    "tns-android": {
+      "version": "3.4.1-2018-02-01-02"
+    },
+    "tns-ios": {
+      "version": "4.0.0-2018-02-01-01"
+    }
+  },
+  "dependencies": {
+    "@angular/animations": "*",
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/forms": "*",
+    "@angular/http": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "@angular/router": "*",
+    "chart.js": "^2.7.1",
+    "nativescript": "^3.4.2 ",
+    "nativescript-angular": "*",
+    "nativescript-pager": "*",
+    "nativescript-theme-core": "*",
+    "nativescript-webview-interface": "^1.4.2",
+    "reflect-metadata": "*",
+    "rxjs": "*",
+    "tns": "^0.1.0",
+    "tns-core-modules": "^4.0.0-2018-02-01-02",
+    "zone.js": "*"
+  },
+  "devDependencies": {
+    "babel-traverse": "^6.26.0",
+    "babel-types": "*",
+    "babylon": "*",
+    "lazy": "*",
+    "nativescript-dev-typescript": "*",
+    "typescript": "*"
+  },
+  "author": "Sean Lewis"
+}

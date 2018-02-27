@@ -1,0 +1,16 @@
+
+    <StackLayout>
+        <Label>SMC Wellness</Label>
+        <StackLayout orientation="vertical">
+            <Image src="res://newlogo" stretch="aspectfill" horizontalAlignment="center"></Image>
+    
+            <TextField id="email" hint="Email Address" keyboardType="email" [(ngModel)]="user" autocorrect="false" autocapitalizationType="none"></TextField>
+            <TextField id="password" secure="true" [(ngModel)]="password" hint="Password"></TextField>
+    
+            <Button text="Sign in" (tap)="signIn()" type="submit"></Button>
+            <Button text="Sign up for Wellness" class="link" tap="signUp"></Button>
+        </StackLayout>
+    </StackLayout>
+
+    
+    

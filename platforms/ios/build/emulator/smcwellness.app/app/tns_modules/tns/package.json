@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "tns@0.1.0",
+      "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness"
+    ]
+  ],
+  "_from": "tns@0.1.0",
+  "_id": "tns@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-/3jnQH1XbnQAR8IuhMy+y/JdFB4=",
+  "_location": "/tns",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "tns@0.1.0",
+    "name": "tns",
+    "escapedName": "tns",
+    "rawSpec": "0.1.0",
+    "saveSpec": null,
+    "fetchSpec": "0.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns/-/tns-0.1.0.tgz",
+  "_spec": "0.1.0",
+  "_where": "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness",
+  "bugs": {
+    "url": "https://github.com/jrop/tns/issues"
+  },
+  "dependencies": {
+    "perplex": "^0.4.1"
+  },
+  "description": "A simple module to parse the Oracle TNSNames file format.",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-env": "^1.2.1",
+    "eslint": "^3.17.1",
+    "eslint-config-jrop": "^0.0.1",
+    "pkgbuild": "^0.0.4"
+  },
+  "homepage": "https://github.com/jrop/tns#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "tns",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrop/tns.git"
+  },
+  "scripts": {
+    "pkg*://main": "babel -w src/ -d lib/",
+    "pkg://main": "babel src/ -d lib/",
+    "prepublish": "pkgbuild && npm test",
+    "test": "node lib/test"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      "tns-core-modules@4.0.0-2018-02-01-02",
+      "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness"
+    ]
+  ],
+  "_from": "tns-core-modules@4.0.0-2018-02-01-02",
+  "_id": "tns-core-modules@4.0.0-2018-02-01-02",
+  "_inBundle": false,
+  "_integrity": "sha1-fd6tOajgev2PHkv2nbNI0INJwKQ=",
+  "_location": "/tns-core-modules",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "tns-core-modules@4.0.0-2018-02-01-02",
+    "name": "tns-core-modules",
+    "escapedName": "tns-core-modules",
+    "rawSpec": "4.0.0-2018-02-01-02",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0-2018-02-01-02"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-4.0.0-2018-02-01-02.tgz",
+  "_spec": "4.0.0-2018-02-01-02",
+  "_where": "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness",
+  "dependencies": {
+    "tns-core-modules-widgets": "next"
+  },
+  "description": "Telerik NativeScript Core Modules",
+  "devDependencies": {
+    "@types/node": "~7.0.5",
+    "tns-platform-declarations": "*"
+  },
+  "files": [
+    "**/*.d.ts",
+    "**/*.js",
+    "**/package.json",
+    "!android17.d.ts",
+    "!ios.d.ts",
+    "!bin/",
+    "!apps/",
+    "!build/",
+    "!node-tests/",
+    "!declarations.android.d.ts",
+    "!declarations.ios.d.ts",
+    "!gruntfile.js",
+    "!org.nativescript.widgets.d.ts"
+  ],
+  "homepage": "https://www.nativescript.org",
+  "license": "Apache-2.0",
+  "name": "tns-core-modules",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/NativeScript/commit/c0a7a45ab97b70ff3f580f5a6515b5a466b0f283"
+  },
+  "snapshot": {
+    "android": {
+      "tns-java-classes": {
+        "modules": [
+          "ui/frame/activity",
+          "ui/frame/fragment"
+        ]
+      }
+    }
+  },
+  "typings": "tns-core-modules.d.ts",
+  "version": "4.0.0-2018-02-01-02"
+}

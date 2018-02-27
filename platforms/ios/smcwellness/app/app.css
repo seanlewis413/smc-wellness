@@ -1,0 +1,108 @@
+/*@import "nativescript-theme-core/css/core.light.css";*/ 
+
+
+/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. For a full list of class names in the theme
+refer to http://docs.nativescript.org/ui/theme. 
+The imported CSS rules must precede all other types of rules.
+*/
+/*@import 'nativescript-theme-core/css/core.light.css';*/
+
+/*
+The following CSS rule changes the font size of all UI
+components that have the btn class name.
+*/
+
+/*@import url('~/platform.css');*/
+
+
+Page {
+    background-color: black;
+    font-size: 17;
+    horizontalAlignment: center;
+}
+TextField {
+    background-color: #C8C0B8;
+    margin: 10;
+    padding: 10;
+}
+Image {
+    margin-top: 40;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 80;
+    width:auto;
+    max-width:100%;
+    height:auto;
+}
+Button {
+    color: #606280;
+    margin: 10;
+    padding: 5;
+}
+
+.h1{
+    text-align: center;
+    font-size: 36;
+    padding: 10;
+    color: inherit;
+}
+
+WrapLayout{
+    horizontal-alignment: center;
+    text-align: center;
+}
+
+TextField{
+    horizontalAlignment: center;
+    padding: 10;
+    min-width: 100;
+}
+
+.centered{
+   text-align: center;
+   horizontal-align: center;
+}
+
+.left{
+    text-align: center;
+    horizontal-align: left;
+    horizontalAlignment: left;
+    float: left;
+    width: 15%;
+}
+
+.right{
+    text-align: center;
+    horizontal-align: right;
+    horizontalAlignment: right;
+    float: right;
+    width: 15%;
+}
+
+.day{
+    width: 60%;
+}
+
+#invisible-btn{
+    color: none;
+    background-color: none;
+    border-color: none;
+}
+
+#logout{
+    background-color: #c9252d;
+}
+
+#error{
+    color: white;
+    font-size: 20px;
+    padding: 100% 0;
+}

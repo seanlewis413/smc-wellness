@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "**/*.js": true,
+        "**/*.map": true,
+        "**/*factory*": true,
+        "**/*aot*": true
+    }
+}

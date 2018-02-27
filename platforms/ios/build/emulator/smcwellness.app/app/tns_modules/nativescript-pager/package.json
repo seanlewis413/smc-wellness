@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      "nativescript-pager@7.0.12",
+      "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness"
+    ]
+  ],
+  "_from": "nativescript-pager@7.0.12",
+  "_id": "nativescript-pager@7.0.12",
+  "_inBundle": false,
+  "_integrity": "sha512-Om6+I4UvhTQ76vspLqHRoLBohqUBwU7PTcYlnttDzzAva8P6PUnVPG0nq9bwlYrKqwMe1FW1Q0V34W3CkPYGJg==",
+  "_location": "/nativescript-pager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nativescript-pager@7.0.12",
+    "name": "nativescript-pager",
+    "escapedName": "nativescript-pager",
+    "rawSpec": "7.0.12",
+    "saveSpec": null,
+    "fetchSpec": "7.0.12"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-pager/-/nativescript-pager-7.0.12.tgz",
+  "_spec": "7.0.12",
+  "_where": "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness",
+  "author": {
+    "name": "Osei Fortune",
+    "email": "fortune.osei@yahoo.com"
+  },
+  "bootstrapper": "nativescript-plugin-seed",
+  "bugs": {
+    "url": "https://github.com/triniwiz/nativescript-pager/issues"
+  },
+  "dependencies": {},
+  "description": "[![npm](https://img.shields.io/npm/v/nativescript-pager.svg)](https://www.npmjs.com/package/nativescript-pager) [![npm](https://img.shields.io/npm/dt/nativescript-pager.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-pager) [![Build Status](https://travis-ci.org/triniwiz/nativescript-pager.svg?branch=master)](https://travis-ci.org/triniwiz/nativescript-pager)",
+  "devDependencies": {
+    "@angular/common": "~5.0.0",
+    "@angular/compiler": "~5.0.0",
+    "@angular/compiler-cli": "~5.0.0",
+    "@angular/core": "~5.0.0",
+    "@angular/forms": "~5.0.0",
+    "@angular/http": "~5.0.0",
+    "@angular/platform-browser": "~5.0.0",
+    "@angular/platform-browser-dynamic": "~5.0.0",
+    "@angular/router": "~5.0.0",
+    "nativescript-angular": "~5.0.0",
+    "prompt": "^1.0.0",
+    "rimraf": "^2.5.0",
+    "rxjs": "^5.0.1",
+    "tns-core-modules": "^3.1.0",
+    "tns-platform-declarations": "^3.1.0",
+    "tslint": "^5.0.0",
+    "typescript": "~2.4.0",
+    "zone.js": "^0.8.2"
+  },
+  "homepage": "https://github.com/triniwiz/nativescript-pager",
+  "keywords": [
+    "NativeScript",
+    "JavaScript",
+    "Android",
+    "iOS"
+  ],
+  "license": "Apache-2.0",
+  "main": "pager",
+  "name": "nativescript-pager",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "scripts": {
+    "build": "npm i && tsc",
+    "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
+    "clean": "cd ../demo && rimraf hooks node_modules platforms && cd ../demo-ng && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.link",
+    "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
+    "demo.ios": "npm i && npm run tsc && cd ../demo && tns run ios --syncAllFiles",
+    "demo.ng.android": "npm i && npm run tsc && cd ../demo-ng && tns run android --syncAllFiles",
+    "demo.ng.ios": "npm i && npm run tsc && cd ../demo-ng && tns run ios --syncAllFiles",
+    "demo.reset": "cd ../demo && rimraf platforms && cd ../demo-ng && rimraf platforms",
+    "ngc": "npm i && npm run ngc.clean && node --max-old-space-size=8192 ./node_modules/.bin/ngc -p tsconfig.aot.json",
+    "ngc.clean": "find ./ angular/ -name '*.metadata.json' -delete",
+    "plugin.link": "npm link && cd ../demo && npm link nativescript-pager && cd ../demo-ng && npm link nativescript-pager && cd ../src",
+    "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-pager && tns plugin add ../src && cd ../demo-ng && tns plugin remove nativescript-pager && tns plugin add ../src",
+    "plugin.tscwatch": "npm run tsc -- -w",
+    "prepublishOnly": "npm run ngc",
+    "test.android": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
+    "test.ios": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
+    "test.ng.android": "npm i && npm run tsc && npm run tslint && cd ../demo-ng && tns build android && tns test android --justlaunch",
+    "test.ng.ios": "npm i && npm run tsc && npm run tslint && cd ../demo-ng && tns build ios && tns test ios --justlaunch",
+    "tsc": "tsc -skipLibCheck",
+    "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\""
+  },
+  "typings": "index.d.ts",
+  "version": "7.0.12"
+}

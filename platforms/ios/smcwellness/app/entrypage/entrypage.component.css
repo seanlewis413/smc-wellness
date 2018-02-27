@@ -1,0 +1,141 @@
+.day{
+	font-size: 24px;
+}
+
+.navbar{
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+
+
+Scrollview, StackLayout{
+	width: 100%;
+}
+
+.container{
+	padding: 30;
+	horizontal-align: center;
+	text-align: center;	
+}
+
+.topheader{
+	text-align: center;
+	padding: 10;
+	color: #5db64e;;
+}
+
+.daynotdone{
+	text-align: center;
+	padding: 10;
+	color: #c9252d;
+}
+
+.padded{
+	padding:20;
+}
+
+.question{
+	font-size: 20;
+}
+
+.inner {
+  width: 50%;
+  margin: 0 auto;
+}
+#test{
+	background-color: #c9252d;
+}
+#diet{
+
+	background-color: black;
+	color: #e4da42;
+}
+
+#exercise{
+
+	background-color: black;
+	color: #5db64e;
+}
+
+#sleep-water{
+
+	background-color: black;
+	color: #999999;
+}
+
+#bad-habits{
+
+	background-color: black;
+	color: #c9252d;
+}
+
+#bonus-challenge{
+
+	background-color: black;
+	color: #61627c;
+}
+
+/*
+#diet > .h1{
+	color: #e4da42;
+}
+#exercise > .h1{
+	color: #5db64e;
+}
+#sleep-water > .h1{
+	color: #999999;
+}
+#bad-habits > .h1{
+	color: #c9252d;
+}
+#bonus-challenge > .h1{
+	color: #61627c;
+}
+*/
+
+
+
+
+.questionsection{
+
+	padding: 20;
+	width: 100%;
+}
+
+.filler{
+
+	padding: 175;
+}
+
+.chooser{
+	border-radius: 50;
+	
+}
+
+Button{
+	background-color:transparent;
+	border-width: 4;
+	border-color: #999999;
+	color: white;
+	border-radius: 50;
+}
+
+.nav-button{
+	color: white;
+	background-color: black;
+	horizontal-align: right;
+}
+
+
+.h1{
+	color: inherit;
+}
+
+#name{
+	color: white;
+}
+
+#retry{
+	background-color: #5db64e;
+}

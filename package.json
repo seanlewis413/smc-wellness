@@ -1,8 +1,10 @@
 {
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
-  "readme": "NativeScript Application",
-  "repository": "<fill-your-repository-here>",
+  "repository": {
+    "type": "git",
+    "url": "<fill-your-repository-here>"
+  },
   "nativescript": {
     "id": "org.nativescript.SMCWellness",
     "tns-android": {
@@ -42,5 +44,11 @@
     "nativescript-dev-typescript": "*",
     "typescript": "*"
   },
-  "author": "Sean Lewis"
+  "author": "Sean Lewis",
+  "name": "smc-wellness",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

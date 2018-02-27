@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      "nativescript-angular@5.1.0",
+      "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness"
+    ]
+  ],
+  "_from": "nativescript-angular@5.1.0",
+  "_id": "nativescript-angular@5.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-pVysRPX1mrsViSVtOitWC6k8hFJ6Ymhb0HnijZb2hPVL9444aos5yuUI+xHtkvBPwWxCdjuIsxi3ySwiS++MMA==",
+  "_location": "/nativescript-angular",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nativescript-angular@5.1.0",
+    "name": "nativescript-angular",
+    "escapedName": "nativescript-angular",
+    "rawSpec": "5.1.0",
+    "saveSpec": null,
+    "fetchSpec": "5.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-angular/-/nativescript-angular-5.1.0.tgz",
+  "_spec": "5.1.0",
+  "_where": "/Users/slewis/Documents/SMC/Projects/NEW-SMC-WELLNESS-TEST/smc-wellness",
+  "author": {
+    "name": "NativeScript Team"
+  },
+  "bin": {
+    "update-app-ng-deps": "./bin/update-app-ng-deps"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/nativescript-angular/issues"
+  },
+  "contributors": [
+    {
+      "name": "Hristo Deshev",
+      "email": "hristo.deshev@telerik.com"
+    },
+    {
+      "name": "Alexander Vakrilov",
+      "email": "alexander.vakrilov@progress.com"
+    },
+    {
+      "name": "Stanimira Vlaeva",
+      "email": "Stanimira.Vlaeva@progress.com"
+    }
+  ],
+  "dependencies": {
+    "nativescript-intl": "^3.0.0",
+    "reflect-metadata": "^0.1.8"
+  },
+  "description": "An Angular renderer that lets you build mobile apps with NativeScript.",
+  "devDependencies": {
+    "@angular/animations": "~5.1.0",
+    "@angular/common": "~5.1.0",
+    "@angular/compiler": "~5.1.0",
+    "@angular/compiler-cli": "~5.1.0",
+    "@angular/core": "~5.1.0",
+    "@angular/forms": "~5.1.0",
+    "@angular/http": "~5.1.0",
+    "@angular/platform-browser": "~5.1.0",
+    "@angular/platform-browser-dynamic": "~5.1.0",
+    "@angular/router": "~5.1.0",
+    "codelyzer": "^4.0.0",
+    "rxjs": "^5.5.0",
+    "tns-core-modules": "next",
+    "tslint": "^5.5.0",
+    "typescript": "~2.4.2",
+    "zone.js": "^0.8.12"
+  },
+  "homepage": "https://www.nativescript.org/",
+  "keywords": [
+    "NativeScript",
+    "Angular"
+  ],
+  "license": "Apache-2.0",
+  "name": "nativescript-angular",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "peerDependencies": {
+    "@angular/platform-browser-dynamic": "~5.1.0",
+    "@angular/common": "~5.1.0",
+    "@angular/compiler": "~5.1.0",
+    "@angular/core": "~5.1.0",
+    "@angular/forms": "~5.1.0",
+    "@angular/http": "~5.1.0",
+    "@angular/platform-browser": "~5.1.0",
+    "@angular/router": "~5.1.0",
+    "rxjs": "^5.5.0",
+    "tns-core-modules": "^3.1.0 || >3.4.0-",
+    "zone.js": "^0.8.4",
+    "typescript": "~2.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NativeScript/nativescript-angular.git"
+  },
+  "scripts": {
+    "ngc": "ngc -p tsconfig.json",
+    "postinstall": "node postinstall.js",
+    "prepare": "npm run ngc",
+    "tsc": "tsc -p tsconfig.json",
+    "tslint": "tslint --project tsconfig.json --config tslint.json --type-check"
+  },
+  "version": "5.1.0"
+}
